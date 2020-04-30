@@ -29,12 +29,6 @@ require_once('insert.php');
 
 			<label for="message"><b>Message</b></label>
 			<textarea name="message" cols="50" rows="5"></textarea>
-
-			<!-- <label for ="message"><b>Password</b></label>
-			<input type="Password" name="psw">
-
-			<label for="psw-repeat">Repeat Password</label>
-			<input type="password" name="psw-repeat" > -->
 			<hr>
 			<button type="submit" class="registerbtn" name = "submit">Submit</button>
 			<!-- <button type="submit" class="resetbtn" name = "reset">Reset</button> -->
