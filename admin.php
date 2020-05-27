@@ -9,7 +9,11 @@ if(isset($_GET['delete'])){
 	$result = $conn->query($sql);
 
 
-	header("location:admin.php");
+	// if ($result) {
+	// 	$message = 'Record deleted';
+	// 	header("location:admin.php".$message);
+	// }
+	
 }
 ?>
 
@@ -17,15 +21,18 @@ if(isset($_GET['delete'])){
 <html>
 <head>
 	<title>Admin</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
+
 	<div class="container">
+		<button class="btn-back"> <a href="index.php">Back</a></button>
 		<?php 
 		$sql = "SELECT * FROM entries"; 
 		$result = $conn->query($sql);
 		
 	?>
+			
 		<table class="table">
 			<thead>
 				<tr>
@@ -60,6 +67,7 @@ if(isset($_GET['delete'])){
 		}
 
 	?>
+
 	
 	</div>
 </body>

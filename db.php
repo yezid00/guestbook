@@ -5,6 +5,7 @@ $username = "root";
 $password="";
 $db_name="guestbook";
 
+session_start();
 
 $conn = new mysqli($servername,$username,$password,$db_name);
 
